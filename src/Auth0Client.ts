@@ -269,7 +269,7 @@ export default class Auth0Client {
     };
   }
   private _authorizeUrl(authorizeOptions: AuthorizeOptions) {
-    return this._url(`/authorize?${createQueryParams(authorizeOptions)}`);
+    return this._url(`/oauth2/auth?${createQueryParams(authorizeOptions)}`);
   }
   private _verifyIdToken(
     id_token: string,
